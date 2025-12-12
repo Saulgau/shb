@@ -83,6 +83,25 @@
       p {
         margin-bottom: 20px;
       }
+      /* Hinweis-Box */
+      .notice-box {
+        background-color: #ff4444;
+        color: #ffffff;
+        padding: 25px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        font-size: 1.1rem;
+        line-height: 1.8;
+      }
+      .notice-box p {
+        margin-bottom: 10px;
+      }
+      .notice-box .signature {
+        text-align: right;
+        font-style: italic;
+        margin-top: 15px;
+      }
       /* Galerie */
       .gallery {
         display: grid;
@@ -216,6 +235,10 @@
         h2 {
           font-size: 1.75rem;
         }
+        .notice-box {
+          font-size: 1rem;
+          padding: 20px;
+        }
       }
       @media (max-width: 480px) {
         body {
@@ -242,11 +265,14 @@
         h2 {
           font-size: 1.5rem;
         }
+        .notice-box {
+          font-size: 0.95rem;
+          padding: 15px;
+        }
       }
     </style>
   </head>
   <body>
-</div>
     <header>
       <div class="container header-content">
         <div class="logo">
@@ -268,6 +294,14 @@
     <main class="container">
       <section id="willkommen">
         <h2>Herzlich willkommen bei SHB!</h2>
+        
+        <div class="notice-box">
+          <p><strong>Wir machen ab 15.12. Winterferien!! ab 07.01. sind wir wieder da!!</strong></p>
+          <p>Danke für 1 Jahr Treue!</p>
+          <p>Frohe Weihnachten und einen guten Rutsch!</p>
+          <p class="signature">♡ Martina</p>
+        </div>
+        
         <p>
           Entdecken Sie exklusive Mode und Accessoires aus zweiter Hand in unserer Boutique.
           Wir bieten Ihnen eine sorgfältig ausgewählte Kollektion hochwertiger Secondhand-Artikel, die
@@ -339,7 +373,7 @@
             src="https://lh3.googleusercontent.com/p/AF1QipNAn1BZ6OmZkiddbfar7E41S2Z5BnmtBnCdxk24=s680-w680-h510"
             alt="Produkt 9"
             tabindex="0"
-            onclick="openModal(); currentSlide(8)"
+            onclick="openModal(); currentSlide(9)"
           />
         </div>
       </section>
